@@ -28,7 +28,17 @@ let users = {
     }
     return false;
   }
-  
-  
-   
+
   console.log(isEveryoneHere(users));
+
+  function countOnline(usersObj) {
+  
+    let result = 0;
+      for (let users in usersObj) {
+        if (usersObj[users].online === true) {
+          result++;
+        }
+      }
+      return result;
+    }
+    console.log(countOnline(users))
