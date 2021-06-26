@@ -42,3 +42,11 @@ let users = {
       return result;
     }
     console.log(countOnline(users))
+
+
+    //Generate an Array of All Object Keys with Object.keys()
+    function getArrayOfUsers(obj) {
+      return Object.keys(users)
+    }
+    
+    console.log(getArrayOfUsers(users));
