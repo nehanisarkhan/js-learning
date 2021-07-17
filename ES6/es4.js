@@ -6,3 +6,21 @@ function editInPlace() {
 
 }
 editInPlace();
+
+
+//to prevent object mutation
+
+function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+  
+  Object.freeze(freezeObj); 
+    try {
+      MATH_CONSTANTS.PI = 3.14;
+    } catch(ex) {
+      console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+  }
+  const PI = freezeObj();
