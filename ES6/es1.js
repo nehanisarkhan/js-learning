@@ -23,4 +23,4 @@ console.log(increment(5)); // output=6
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
-console.log(sum(1, 2, 3)); // 6
+console.log(sum(1, 2, 3)); // result=6
