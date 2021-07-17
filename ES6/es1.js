@@ -13,7 +13,14 @@ catTalk();
 
 //set default parameters for a function
 
-
 const increment = (number, value=1) => number + value; 
 console.log(increment(5,2));// output=7
 console.log(increment(5)); // output=6
+
+
+//use the rest parameter with function parameter
+
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1, 2, 3)); // 6
