@@ -24,3 +24,16 @@ const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
 console.log(sum(1, 2, 3)); // result=6
+
+
+//destructuring  assignment to extract values from object
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+
+const {today,tomorrow} = HIGH_TEMPERATURES;
+
