@@ -9,3 +9,11 @@ function catTalk() {
 
 }
 catTalk();
+
+
+//set default parameters for a function
+
+
+const increment = (number, value=1) => number + value; 
+console.log(increment(5,2));// output=7
+console.log(increment(5)); // output=6
