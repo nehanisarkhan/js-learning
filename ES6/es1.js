@@ -54,9 +54,24 @@ const {today:{low:lowToday , high:highToday}} = LOCAL_FORECAST;
 
 const source = [1,2,3,4,5,6,7,8,9,10];
 function removeFirstTwo(list) {
-  // Only change code below this line
-  const [a,b,...arr] = list; // Change this line
-  // Only change code above this line
+  const [a,b,...arr] = list; //same as splice
   return arr;
 }
 const arr = removeFirstTwo(source);
+console.log("arr = "+arr);
+
+
+//Use Destructuring Assignment to Pass an Object as a Function's Parameters
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+const half = ({max,min}) => (max + min) / 2.0; 
+
+console.log("half = "+half);
