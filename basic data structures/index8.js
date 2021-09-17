@@ -28,3 +28,16 @@ let quoteSample =
 let vowelRegex = /[aeiou]/gi; // Change this line
 let result = quoteSample.match(vowelRegex); // Change this line
 console.log(result.length); //no. of vowels present
+
+//Match Numbers and Letters of the Alphabet
+
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+
+//Match Single Characters Not Specified
+//To create a negated character set, you place a caret character (^)
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
