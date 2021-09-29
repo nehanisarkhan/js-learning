@@ -67,3 +67,18 @@ var gloveBoxContents = "maps";
 gloveBoxContents = myStorage.car.inside["glove box"];
 console.log(gloveBoxContents);
 console.log(myStorage.car.inside["glove box"]);
+
+//Accesing nested arrays
+
+var myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"],
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"],
+  },
+];
+
+var secondTree = myPlants[1].list[1];
