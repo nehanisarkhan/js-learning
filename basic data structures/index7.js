@@ -84,3 +84,10 @@ function randomRange(myMin, myMax) {
 }
 
 console.log(randomRange(7, 10));
+
+//Use the parseInt Function with a Radix
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011");
