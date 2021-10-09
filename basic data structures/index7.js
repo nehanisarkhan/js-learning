@@ -77,17 +77,29 @@ function lookUpProfile(name, prop) {
 lookUpProfile("Akira", "likes");
 
 //Generate Random Whole Numbers within a Range
-function randomRange(myMin, myMax) {
-  // Only change code below this line
-  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
-  // Only change code above this line
-}
 
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
 console.log(randomRange(7, 10));
 
-//Use the parseInt Function with a Radix
+// Use the parseInt Function with a Radix
+
 function convertToInteger(str) {
   return parseInt(str, 2);
 }
 
-convertToInteger("10011");
+// convertToInteger("10011");
+
+//reverse a string
+
+function reverseString(str) {
+  var arr = "";
+  for (var i = str.length - 1; i >= 0; i--) {
+    arr += str[i];
+  }
+
+  return arr;
+}
+
+console.log(reverseString("hello"));
