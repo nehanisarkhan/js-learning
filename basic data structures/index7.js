@@ -139,3 +139,26 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+//longest word in a string
+
+function findLongestWordLength(str) {
+  var strSplit = str.split(" ");
+  var longestWord = 0;
+  for (var i = 0; i < strSplit.length; i++) {
+    if (strSplit[i].length > longestWord) {
+      longestWord = strSplit[i].length;
+    }
+  }
+  return longestWord;
+}
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+//using reduce()
+function findLongestWord(str) {
+  var longestWord = str.split(" ").reduce(function (longest, currentWord) {
+    return currentWord.length > longest.length ? currentWord : longest;
+  }, "");
+  return longestWord.length;
+}
+findLongestWord("The quick brown fox jumped over the lazy dog");
