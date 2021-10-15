@@ -51,3 +51,14 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("He has to give me a new name", "name");
+
+//truncate a string
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.substr(0, num) + "..."; //substr() gets a part of string
+  } else {
+    return str;
+  }
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
